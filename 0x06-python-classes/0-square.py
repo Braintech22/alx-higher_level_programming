@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""Square module."""
+# 0-square.py
+# Author: James Obekpa
+"""Define a class Square."""
 
 
 class Square:
-    """Defines a square"""
+    """Represent a square."""
     pass

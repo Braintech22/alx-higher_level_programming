@@ -1,14 +1,22 @@
-#!/usr/bin/python3
-Square = __import__('4-square').Square
+class calculator():
 
-my_square = Square(89)
-print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+    
 
-my_square.size = 3
-print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+    def add(self):
+       print (self.num1 +self.num2)
 
-try:
-    my_square.size = "5 feet"
-    print("Area: {} for size: {}".format(my_square.area(), my_square.size))
-except Exception as e:
-    print(e)
+    def subtract(self):
+        return self.num1 - self.num2
+
+    def multiplication(self):
+        return self.num1 * self.num2
+
+def main ():
+
+    oper1 = calculator(12,10)
+
+    oper1.add()
+
